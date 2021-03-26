@@ -38,7 +38,6 @@ export class AppComponent {
 
   ngOnInit(){
     this.getCategories();
-    console.log(this.categories.length)
   }
 
 }

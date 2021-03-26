@@ -25,7 +25,7 @@ export class ApiService {
   }
 
   create(data): Observable<any> {
-    return this.http.post(baseUrl, data);
+    return this.http.post(`${baseUrl}/categories/create`, data);
   }
 
   update(id, data): Observable<any> {
