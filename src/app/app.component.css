@@ -1,16 +1,30 @@
-.example-spacer {
+mat-card{
+  margin: 10px;
+  width: 300px;
+  text-align: center;
+  height: 200px;
+  color: whitesmoke;
+  border-radius: 10px;
+  background: rgb(24,27,247);
+background: linear-gradient(174deg, rgba(24,27,247,1) 0%, rgba(109,88,235,1) 35%, rgba(120,156,230,1) 100%);
+}
+
+.spacer {
     flex: 1 1 auto;
   }
 
-mat-card{
-    margin: 10px;
-    width: 300px;
-    text-align: center;
-    height: 200px;
-    color: whitesmoke;
-    border-radius: 10px;
-    background: rgb(24,27,247);
-background: linear-gradient(174deg, rgba(24,27,247,1) 0%, rgba(109,88,235,1) 35%, rgba(120,156,230,1) 100%);
+.button-position{
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  padding: 5px;
+}
+
+.add-button{
+  background-color: rgb(24,27,247);
+  color: aliceblue;
+  width: 50px;
+  height: 50px;
 }
 
 .categories{

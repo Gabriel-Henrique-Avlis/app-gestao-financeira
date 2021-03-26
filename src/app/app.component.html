@@ -1,14 +1,14 @@
 <p>
   <mat-toolbar color="primary">
-    <button mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon">
+    <button mat-icon-button>
       <mat-icon>menu</mat-icon>
     </button>
     <span>Gestão Financeira</span>
-    <span class="example-spacer"></span>
-    <button mat-icon-button class="example-icon favorite-icon" aria-label="Example icon-button with heart icon">
+    <span class="spacer"></span>
+    <button mat-icon-button>
       <mat-icon>favorite</mat-icon>
     </button>
-    <button mat-icon-button class="example-icon" aria-label="Example icon-button with share icon">
+    <button mat-icon-button>
       <mat-icon>share</mat-icon>
     </button>
   </mat-toolbar>
@@ -18,6 +18,12 @@
   <mat-card *ngFor="let c of categories" (click)="openItens(c.categId, c.name)">
     <mat-card-title>{{c.name}}</mat-card-title>
   </mat-card>
+</div>
+
+<div class="button-position">
+  <button mat-icon-button class="add-button" (click)="openNewCategory()">
+    <mat-icon>add</mat-icon>
+  </button>
 </div>
    
 

@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { NgbActiveModal, NgbModal } from '@ng-bootstrap/ng-bootstrap';
 import { ApiService } from '../services/api.service';
 import { ItensComponent } from './modals/itens/itens.component';
+import { NewCategoryComponent } from './modals/new-category/new-category.component';
 
 
 @Component({
@@ -29,6 +30,11 @@ export class AppComponent {
    categ.componentInstance.categId = c;
    categ.componentInstance.name = n;
   }
+
+  openNewCategory(){
+    this.ms.open(NewCategoryComponent, {size:'sm', animation: true, backdropClass:'modal-backdrop-page'});
+   }
+ 
 
   ngOnInit(){
     this.getCategories();

@@ -1,0 +1,21 @@
+mat-card-content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+mat-card-header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.buttons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+button{
+    margin-right: 3px;
+}

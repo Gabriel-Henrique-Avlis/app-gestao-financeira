@@ -13,14 +13,18 @@ import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { ItensComponent } from './modals/itens/itens.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
-import {MatTableModule} from '@angular/material/table';
+import { MatTableModule } from '@angular/material/table';
+import { NewCategoryComponent } from './modals/new-category/new-category.component';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatInputModule } from '@angular/material/input';
 
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    ItensComponent
+    ItensComponent,
+    NewCategoryComponent
   ],
   imports: [
     BrowserModule,
@@ -35,6 +39,8 @@ import {MatTableModule} from '@angular/material/table';
     FormsModule,
     HttpClientModule,
     NgbModule,
+    MatFormFieldModule,
+    MatInputModule
   ],
   providers: [],
   bootstrap: [AppComponent]
