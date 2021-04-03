@@ -1,0 +1,32 @@
+<mat-card class="card">
+    <mat-card-title>
+        {{name}}
+    </mat-card-title>
+</mat-card>
+<mat-card>
+  <div class="row">
+    <div class="col-6">
+      <label>Descrição</label>
+    </div>
+    <div class="col-6">
+      <label>Valor</label>
+    </div>
+  </div>
+  <div *ngFor="let i of itens" class="row">
+    <div class="col-6">{{i.description}}</div>
+    <div class="col-6">13,00</div>
+  </div>
+</mat-card>
+
+<mat-card>
+  <mat-form-field appearance="fill" >
+    <input matInput [(ngModel)]="item.description" name="description" type="text" required>
+  </mat-form-field>
+  <br>
+  <button mat-raised-button color="primary" (click)="postItem()">Adicionar Item</button>
+</mat-card>
+
+<mat-card class="buttons">
+  <button mat-raised-button color="accent" (click)="deleteCategory(); close()">Excluir</button>
+  <button mat-raised-button color="accent" (click)="cancel()">Cancelar</button>
+</mat-card>

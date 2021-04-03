@@ -1,0 +1,19 @@
+mat-card-title{
+    text-align: center;
+}
+
+mat-card{
+    margin-bottom: 100px;
+    margin-right: 20px;
+    margin-left: 20px;
+    margin-top: 50px;
+    background-color: rgb(222, 225, 228);
+}
+
+button{
+    margin-right: 5px;
+}
+
+table {
+    width: 100%;
+}
